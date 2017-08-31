@@ -371,6 +371,67 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &797332267
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4219919204445364, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 459
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219919204445364, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 202
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219919204445364, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219919204445364, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219919204445364, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219919204445364, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219919204445364, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219919204445364, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733530342640958, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431242035737692, guid: 8245c24761559f24f897a0c9884c6239,
+        type: 2}
+      propertyPath: musicSource
+      value: 
+      objectReference: {fileID: 1473584233}
+    - target: {fileID: 82739193818213126, guid: 8245c24761559f24f897a0c9884c6239,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a80e0a3f72a8a424bb923627cab81b2f, type: 3}
+    - target: {fileID: 82739193818213126, guid: 8245c24761559f24f897a0c9884c6239,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8245c24761559f24f897a0c9884c6239, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &994459046
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +744,11 @@ MonoBehaviour:
   - Living? Not anymore they aren't.
   - What?! But how can a man kill a god?
   - A man cannot kill a god. But demons can.
+--- !u!82 &1473584233 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82739193818213126, guid: 8245c24761559f24f897a0c9884c6239,
+    type: 2}
+  m_PrefabInternal: {fileID: 797332267}
 --- !u!1 &1504031555
 GameObject:
   m_ObjectHideFlags: 0

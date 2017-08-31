@@ -50,6 +50,7 @@ public class WordTyper : MonoBehaviour {
             StartCoroutine("ShowText");
         } else
         {
+            SoundManager.instance.FadeSong();
             LevelManager.levelManager.LoadByIndex(2);
         }
     }

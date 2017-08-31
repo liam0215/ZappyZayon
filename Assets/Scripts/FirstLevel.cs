@@ -13,11 +13,6 @@ public class FirstLevel : MonoBehaviour {
         StartCoroutine("FadeIn");
         doingSetup = true;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     IEnumerator FadeIn()
     {
@@ -28,6 +23,7 @@ public class FirstLevel : MonoBehaviour {
             color.a = (100.0f - i) / 100.0f;
             levelImage.color = color;
             yield return new WaitForSeconds(.01f);
-        } 
+        }
+        doingSetup = false;
     }
 }
