@@ -669,8 +669,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52418f225ff68477cb21d52faa69f424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.1
-  fullText: 'FUCK YOU LIAM YOU BIG ASS FUCKER '
+  delay: 0.05
+  fullText:
+  - Papa, what happened to the Dreamland?
+  - The dreamland? I'm afraid I don't catch your meaning.
+  - The Dreamland Papa! The place where heroes saved the day, golden warriors charged
+    across the plains, and real living gods walked the earth.
+  - "... Oh! You mean [insert continent name here] well\u2026 It's just not the same
+    place anymore, son."
+  - What do you mean? If anything ever went wrong, heroes could save the day.
+  - Not every time, son. Sometimes fate just isn't on your side.
+  - 'But they had living gods on- '
+  - Living? Not anymore they aren't.
+  - What?! But how can a man kill a god?
+  - A man cannot kill a god. But demons can.
 --- !u!1 &1504031555
 GameObject:
   m_ObjectHideFlags: 0

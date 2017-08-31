@@ -6,29 +6,51 @@ using UnityEngine.UI;
 public class WordTyper : MonoBehaviour {
 
 	public float delay = 0.1f;
-	public string fullText;
+	public string[] fullText;
+    private int indexOfText = 0;
 	private string currentText = "";
 
 	// Use this for initialization
 	void Start (){
+        indexOfText = 0;
 		StartCoroutine("ShowText");
 	}
 
-    private void Update()
+    void Update()
     {
         if (Input.GetKeyDown("space") || Input.GetKeyDown("return"))
         {
-            currentText = fullText;
-            this.GetComponent<Text>().text = currentText;
-            StopCoroutine("ShowText");
+            if (currentText == fullText[indexOfText])
+            {
+                NextText();
+            }
+            else
+            {
+                currentText = fullText[indexOfText];
+                this.GetComponent<Text>().text = currentText;
+                StopCoroutine("ShowText");
+            }
         }
     }
 
     IEnumerator ShowText() {
-		for (int i = 0; i < fullText.Length; i++) {
-			currentText = fullText.Substring (0, i);
+		for (int i = 0; i < fullText[indexOfText].Length; i++) {
+            currentText += fullText[indexOfText][i];
 			this.GetComponent<Text>().text = currentText;
 			yield return new WaitForSeconds(delay);
 		}
 	}
+
+    private void NextText()
+    {
+        if(indexOfText < fullText.Length - 1)
+        {
+            indexOfText++;
+            currentText = "";
+            StartCoroutine("ShowText");
+        } else
+        {
+            LevelManager.levelManager.LoadByIndex(2);
+        }
+    }
 }
