@@ -10,7 +10,6 @@ public class WordTyper : MonoBehaviour {
     private int indexOfText = 0;
 	private string currentText = "";
 
-	// Use this for initialization
 	void Start (){
         indexOfText = 0;
 		StartCoroutine("ShowText");
@@ -47,7 +46,7 @@ public class WordTyper : MonoBehaviour {
         {
             indexOfText++;
             currentText = "";
-            StartCoroutine("ShowText");
+			StartCoroutine ("ShowText");
         } else
         {
             SoundManager.instance.FadeSong();

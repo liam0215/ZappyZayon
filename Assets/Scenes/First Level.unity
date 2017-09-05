@@ -199,7 +199,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0.71034503, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.20631489, g: 0.24779265, b: 0.2647059, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -377,7 +377,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1608876400}
-  - component: {fileID: 1608876401}
   m_Layer: 0
   m_Name: ScreenManager
   m_TagString: Untagged
@@ -398,17 +397,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1608876401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1608876399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e7aa69e07473c48a9df04f4a04b332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1773022456
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,6 +424,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e7aa69e07473c48a9df04f4a04b332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  floorTiles:
+  - {fileID: 21300010, guid: 7e722ea943ed44b1db2df72ba8902b30, type: 3}
+  - {fileID: 21300124, guid: 7e722ea943ed44b1db2df72ba8902b30, type: 3}
+  - {fileID: 21300774, guid: 7e722ea943ed44b1db2df72ba8902b30, type: 3}
+  - {fileID: 21301100, guid: 7e722ea943ed44b1db2df72ba8902b30, type: 3}
+  - {fileID: 21301432, guid: 7e722ea943ed44b1db2df72ba8902b30, type: 3}
+  - {fileID: 21301768, guid: 7e722ea943ed44b1db2df72ba8902b30, type: 3}
+  columns: 16
+  rows: 16
 --- !u!4 &1773022458
 Transform:
   m_ObjectHideFlags: 0
