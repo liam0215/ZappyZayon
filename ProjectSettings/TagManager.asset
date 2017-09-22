@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - Fade
-  - 
+  - Floor
+  - Player
   - 
   - 
   - 
@@ -41,9 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: background
+  - name: Background
     uniqueID: 746577169
     locked: 0
-  - name: spinning decal
-    uniqueID: 1560133951
+  - name: Fade
+    uniqueID: 106279713
+    locked: 0
+  - name: Player
+    uniqueID: 1291553143
     locked: 0

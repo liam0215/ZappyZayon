@@ -12,13 +12,13 @@ public class FirstLevel : MonoBehaviour {
 
     private Transform boardHolder;
     private List<Vector3> gameGrid = new List<Vector3>();
-
+ 
 	// Use this for initialization
 	void Start () {
         levelImage = GameObject.Find("Fade").GetComponent<Image>();
         StartCoroutine("FadeIn");
-        InitializeList();
-        LevelSetup();
+       // InitializeList();
+       // LevelSetup();
     }
         
     void InitializeList()
