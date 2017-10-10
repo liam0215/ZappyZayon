@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
-	//public GameObject followTarget;
+	public GameObject followTarget;
     
-	//public float moveSpeed;
+	public float moveSpeed;
 
-	//private Vector3 targetPos;
+	private Vector3 targetPos;
 
 
 	// Use this for initialization
@@ -18,8 +18,7 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-    /*
 		targetPos = new Vector3 (followTarget.transform.position.x, followTarget.transform.position.y, transform.position.z);
-		transform.position = Vector3.Lerp (transform.position, targetPos, moveSpeed * Time.deltaTime); */
+		transform.position = Vector3.Lerp (transform.position, targetPos, moveSpeed * Time.deltaTime); 
 	}
 }

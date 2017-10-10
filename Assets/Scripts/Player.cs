@@ -1,20 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
     public float speed;
     private Animator anim;
     private int animDir = 1;
+    public Image[] hearts;
+    public int maxHealth;
+    private int currentHealth;
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        currentHealth = maxHealth;
+        getHealth();
 	}
+
+    void getHealth()
+    {
+        for(int i = 0; i < maxHealth; i++)
+        {
+            hearts[i].gameObject.SetActive(false);
+        }
+        for(int i = 0; i < maxHealth; i++)
+        {
+            if (i < currentHealth)
+            {
+                hearts[i].gameObject.SetActive(true);
+            } else
+            {
+                hearts[i].gameObject.SetActive(false);
+            }
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
         Move();
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            currentHealth--;
+        }
+        if(Input.GetKeyDown(KeyCode.L) && currentHealth < maxHealth)
+        {
+            currentHealth++;
+        }
+        getHealth();
 	}
 
     void Move()
