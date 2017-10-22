@@ -51,6 +51,11 @@ public class Player : MonoBehaviour {
         getHealth();
 	}
 
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log("stuff");
+    }
+
     void Move()
     {
         float dx = 0.0f, dy = 0.0f;
